@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Form Assignment</title>
+</head>
+
+<body>
+    <form method="get" action="/submit">
+        <fieldset style="margin: auto; width: 100%;">
+            <fieldset style="margin: auto; width: 35%;">
+                <legend align="center">SMiT Registration Form</legend>
+                <h2 align="center">Complete Your Profile</h2>
+
+                <fieldset>
+                    <legend>Name</legend>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter Your Name" id="name" name="name" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Password</legend>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter Your Password" id="password" name="password" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Email</legend>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter Your Email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Web URT</legend>
+                    <label for="website">Website</label>
+                    <input type="url" placeholder="Website URL" id="website" name="website">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Color</legend>
+                    <p>Favorite Color</p>
+                    <input type="radio" id="red" name="favorite_color" value="Red">
+                    <label for="red">Red</label>
+                    <input type="radio" id="blue" name="favorite_color" value="Blue">
+                    <label for="blue">Blue</label>
+                    <input type="radio" id="green" name="favorite_color" value="Green">
+                    <label for="green">Green</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Fruit</legend>
+                    <label for="favorite_fruit">Favorite Fruit</label>
+                    <select id="favorite_fruit" name="favorite_fruit">
+                        <option value="apple">Apple</option>
+                        <option value="banana">Banana</option>
+                        <option value="cherry">Cherry</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Birthday</legend>
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthday">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Range Range</legend>
+                    <label for="age">Age</label>
+                    <input type="range" id="age" name="age" min="0" max="100">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Image/Doc</legend>
+                    <label for="resume">Resume/Profile Picture</label>
+                    <input type="file" id="resume" name="resume">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Search</legend>
+                    <label for="search">Search</label>
+                    <input type="search" id="search" name="search_query">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message</legend>
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter Your message..." name="message" rows="4" cols="52" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Policy</legend>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </fieldset>
+
+                <fieldset align="center">
+                    <button type="submit" formaction="/get" formmethod="get" >🚀 Submit Form</button>
+                </fieldset>
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+
+</html>
